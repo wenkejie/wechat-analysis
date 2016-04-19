@@ -1,0 +1,91 @@
+//
+// 右侧弹出菜单结构
+// --------------------------------------------------
+
+
+.aui-menu{
+  position: fixed;right: 1.25rem;bottom: 1.25rem;z-index: 120;
+  width: 2.188rem;height: 2.188rem;line-height: 2.188rem;border-radius: 50%;
+  background: #f95353;box-shadow: 2px 2px 6px rgba(0,0,0,.25);
+  color: #fff;text-align: center;
+  transition: All 0.6s ease;
+  i{
+    position: absolute;left: 0;top: 0;z-index: 120;
+    width: 2.188rem;height: 2.188rem;line-height: 2.188rem;
+    text-align: center;
+    transition: All 0.6s ease;
+  }
+  .icon-add{
+    opacity: 0;
+  }
+}
+
+
+
+// .aui-menu{
+//   position: fixed;right: 1.25rem;bottom: 1.25rem;z-index: 120;
+//   width: 2.188rem;height: 2.188rem;line-height: 2.188rem;border-radius: 50%;
+//   background: #f95353;box-shadow: 2px 2px 6px rgba(0,0,0,.25);
+//   color: #fff;text-align: center;
+//   transition: All 0.8s ease;
+
+//   backface-visibility: visible;
+//   transform-style: preserve-3d; 
+//   // perspective: 1000;
+//   i{
+//     position: absolute;left: 0;top: 0;z-index: 120;
+//     width: 2.188rem;height: 2.188rem;line-height: 2.188rem;
+//     text-align: center;
+//     transition: All 0.8s ease ;
+//   }
+//   .icon-close{
+//     opacity: 0;
+//   }
+// }
+
+
+
+@keyframes rotateIn {
+  0{
+    transform:rotate(0);
+  }
+  100%{
+    transform: rotate(45deg)
+  }
+}
+
+@keyframes yAin{
+  0%{transform:rotateY(0deg);}
+  50%{transform:rotateY(90deg);}
+  100%{transform:rotateY(180deg);}
+}
+
+
+.turn{
+  transform: rotate(45deg);
+  .icon-menu{
+    opacity: 0;
+  }
+  .icon-add{
+    opacity: 1;
+  }
+}
+
+.rotateIn {
+  animation:rotateIn forwards  1s ease;
+}
+
+.overturn{
+  animation:yAin  3s ease forwards;
+}
+
+
+.overturn2{
+  // transform: rotateY(180deg);
+  .icon-menu{
+    opacity: 0;
+  }
+  .icon-close{
+    opacity: 1;
+  }
+}

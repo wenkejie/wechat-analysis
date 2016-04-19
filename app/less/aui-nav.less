@@ -1,0 +1,50 @@
+//
+// 导航
+// --------------------------------------------------
+
+.aui-nav{
+  display: table;
+  width: 100%;
+  background: #fff;
+}
+
+.aui-nav-link{
+  display: table-cell;position: relative;
+  height: 3.125rem;line-height: 3.125rem;
+  text-align: center;font-size: 1rem;color: #9b9b9b;font-weight: bold;
+  &.current{
+    color: #ff8509;
+    .aui-nav-line{
+      display: block;
+    }
+  }
+  .aui-nav-line{
+    position: absolute;left: 0;bottom: 0;z-index: 3;
+    display: none;
+    height: 0.188rem;width: 100%;
+    background: #ff8509;
+  }
+}
+
+
+.aui-nav-border{
+  .aui-nav-link{
+    border-bottom: 1px solid #e5e5e5;
+    // &.current{
+    //    border-bottom-color: #ff8509;
+    // }
+  }
+}
+
+
+// 浮动于底部的nav
+.aui-nav-fixed{
+  position: absolute;
+  bottom: 0;left: 0;z-index: 500;
+  .aui-nav-link{
+    border-right: 1px solid #eee;
+    &:last-child{
+      border-right: none;
+    }
+  }
+}

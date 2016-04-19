@@ -1,0 +1,41 @@
+//
+// 侧边栏
+// --------------------------------------------------
+
+
+.aui-sidebar{
+  position: fixed;left: 0;top: 0;bottom: 0;z-index: 90;
+  width: 0;height: 100%;padding: 0.75rem 0;
+  background: #041f2b;overflow: hidden;
+  color: #fff;font-size: 14px;
+  transition: All 0.6s ease;
+}
+
+
+.aui-subnav{
+  + .aui-subnav{
+    margin-top: 1.875rem;
+  }
+  >dt{
+    height: 2.188rem;line-height: 2.188rem;padding-left: 0.75rem;
+  }
+  >dd{
+    height: 2.188rem;line-height: 2.188rem;padding-left: 2.188rem;
+    border-bottom: 1px solid #112b36;
+    color: #adbcc9;
+    &.current{
+      background: #29404a;
+    }
+  }
+}
+
+
+.aui-subnav-icon{
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+
+.aui-sidebar-show{
+  width: 80%;
+}

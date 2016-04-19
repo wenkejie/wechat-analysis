@@ -1,0 +1,107 @@
+//
+// 统计插件结构
+// --------------------------------------------------
+// 常量
+
+
+
+.aui-statistics{
+	background: #4a77d8;
+}
+
+.aui-statistics-left,.aui-statistics-right{
+	float: left;
+	width: 50%;
+}
+
+.aui-statistics-img{
+	width: 100%;height: 100%;
+}
+
+
+.aui-statistics-body{
+	&:extend(.clearfix all);
+	padding: 0.563rem 1.688rem 0 1.688rem;
+}
+
+.aui-statistics-footer{
+	&:extend(.clearfix all);
+	height: 2.438rem;line-height: 2.438rem;
+	border-top: 1px solid #668cde;
+	color: #fff;font-size: 0.875rem;
+	.aui-statistics-left,.aui-statistics-right{
+		text-align: center;
+	}
+	.aui-statistics-num{
+		color: #f8e71c;font-size: 1rem;
+	}
+}
+
+
+
+// 单图表结构
+.aui-statistics-single{
+	.aui-statistics-body{
+		padding: 0.75rem 1.688rem 0.75rem 1.688rem;
+	}
+	.aui-statistics-right{
+		padding-left: 1rem;
+
+	}
+}
+
+
+
+.statistics-data-list{
+	font-size: 0.875rem;
+	color: #b6c8ef;
+}
+
+.statistics-data-line{
+	padding: 0.625rem 0;
+	span,label{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	i{
+		font-size:0.875rem;
+	}
+	>.num-info{
+		margin-left: 0.938rem;
+		font-size: 1.125rem;color: #fff;
+	}
+}
+
+.aui-circle-blue{
+	color: #50e3c2;
+}
+
+.aui-circle-blue-weak{
+	color: #1ac6ca;
+}
+
+.aui-circle-blue-strong{
+	color: #4dabf1;
+}
+
+.aui-circle-green{
+	color: #b8e986;
+}
+.aui-circle-orange{
+	color: #ffac57;
+}
+
+
+
+// 员工管理统计表格
+.aui-statistics-member{
+	background: #fff;border-top: 1px solid #d2d2d2;border-bottom: 1px solid #d2d2d2;
+	.aui-statistics-body{
+		padding: 0.563rem 0.938rem;
+	}
+	.aui-statistics-footer{
+		border-top: none;
+		color: #333;
+	}
+}
+

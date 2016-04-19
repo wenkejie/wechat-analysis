@@ -1,0 +1,114 @@
+//
+// 列表
+// --------------------------------------------------
+// 常量
+
+
+// 运价的一些其他信息表
+.aui-list{
+
+}
+
+.aui-list-item{
+	padding: 0 0 0.875rem 1.75rem;margin-top: 5px;
+	background: #fff;border-top: 1px solid #e5e5e5;border-bottom: 1px solid #e5e5e5;
+	&:last-child{
+		margin-bottom: 5px;
+	}
+}
+
+.list-item-header{
+	position: relative;
+	padding: 12px 0;
+	font-size:0.875rem;font-weight: bold;
+	.icon-star{
+		position: absolute;left: -1.625em;top: 0.563rem;
+		width: 1.5rem;height: 1.5rem;line-height: 1.5rem;
+		font-size: 0.875rem;color: #d8d8d8;text-align: center;
+		&.attention{
+			color: #fca504;
+		}
+	}
+}
+
+.list-item-body{
+	display: table;table-layout: fixed;
+	width: 100%;
+	font-size:0.75rem;color: #999;
+}
+
+.list-item-left,.list-item-right{
+	display: table-cell;
+	vertical-align: top;
+}
+
+.list-item-left{
+	&:extend(.clearfix all);
+}
+.list-item-cell{
+	float: left;
+	width: 50%;
+	span{
+		display: block;
+	}
+	.num-info{
+		padding-bottom: 6px;
+		font-size: 1rem;
+	}
+}
+
+.list-item-line{
+	padding-bottom: 0.625rem;padding-left: 5.313rem;
+	&:last-child{
+		padding-bottom: 0;
+	}
+	> label{
+		display: inline-block;
+		width: 5.313rem;margin-left: -5.625rem;
+		vertical-align: middle;
+		text-align: right;
+	}
+	> span{
+		&:extend(.toe all);
+		display: inline-block;
+		vertical-align: middle;
+		width: 100%;
+	}
+}
+
+
+
+
+
+
+// 详情管理页面的列表
+
+.aui-list-member{
+	margin-top: 0.5rem;
+}
+
+
+
+// 搜索结构列表
+.aui-search-list{
+	padding:0.938rem;
+	font-size: 14px;color: #333;
+	> li{
+		padding: 0.625rem 0;
+		border-bottom: 1px solid #e0e0e0;
+	}
+}
+
+
+// 内置表格的列表结构
+.aui-list-table{
+	.aui-list-item{
+		padding: 0;
+		border-top: none;border-bottom: none;
+	}
+}
+
+
+
+
+
